@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.sidebar {
+    position: absolute;
+    /* background-color: red; */
+    background-color: rgb(194, 189, 189);
+
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+
+
+}
+
+.sidebar nav {
+    padding: 45px;
+
+}
+
+.sidebar nav li {
+    list-style: circle;
+    font-size: 30px;
+    padding: 33px 0;
+
+}
+
+.sidebar nav li a {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav li ul {
+    list-style-type: circle;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+    margin-left: 88px;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+
+}
+
+.info {
+    /* background-color: rgb(47, 0, 255); */
+    height: 60vh;
+    margin: 140px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devinfo {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 65px;
+
+}
+
+.name {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about {
+    font-size: 30px;
+}
+
+.moreabout {
+    font-size: 22px;
+    margin-top: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.btn {
+
+    padding: 10px 15px;
+    border-radius: 22px;
+    color: white;
+    background-color: cornflowerblue;
+    font-weight: bolder;
+    margin: 0 3px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 21px;
+    padding: 10px 19px;
+    margin: 12px 0;
+}
+
+.btn:hover {
+    color: blue;
+    background-color: white;
+}
+
+.devpic img {
+
+    height: 50vh;
+    border-radius: 50%;
+}
+
+.contactform {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 144px;
+    padding-left: 56px;
+    margin:  40px 88px ;
+}
+
+.contactform h1 {
+
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form {
+    margin: 0 30px;
+}
+
+.contactform form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+
+}
+
+#formcheck {
+    flex-direction: row;
+}
+
+#formcheck input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.projectItems {
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.projectContainer h1 {
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.projectItems p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.skillContainer {
+    padding: 12px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skill {
+    width: 500px;
+    height: 20px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#hundred {
+    width: 500px;
+    background-color: blueviolet;
+}
+
+#fifty {
+    width: 250px;
+    background-color: aqua;
+}
+
+#t25 {
+    width: 125px;
+    background-color: yellow;
+}
+
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.cross {
+    margin-left: 185px;
+    margin-top: 10px;
+    width: 50px;
+}
+
+@media (max-width: 1615px) {
+    * {
+        /* background-color: red; */
+    }
+
+    .devpic {
+        display: none;
+    }
+
+    /* 
+    .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+    .main {
+        margin: 50px 8px;
+    }
+
+    .devinfo {
+        font-size: 10px;
+    }
+
+    .buttons {
+        font-size: 6px;
+    }
+}
